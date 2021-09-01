@@ -67,8 +67,6 @@ export const editUser = async(req,res)=>{
 			phone
 		} = req.query;
 
-		console.log(req.query)
-
         const user = await User.updateOne({_id},{$set:{name,lastName,mail,ci,phone}});
         if(user.n > 0 && user.ok > 0) return res.status(201).send({message : 'Was successfully saved'});
         res.status(400).send({error:'Could not update'});
