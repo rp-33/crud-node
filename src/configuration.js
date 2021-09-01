@@ -9,7 +9,7 @@ let configuration = {
 		port : process.env.PORT || 8888
 	},
  	db:{
- 		port: process.env.MONGODB_URI || 'mongodb://localhost/crudnode'
+ 		port: 'mongodb+srv://bigglee:pillow8nic@cluster0.okmzr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' || 'mongodb://localhost/crudnode'
  	}
 };
 
