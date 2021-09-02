@@ -21,7 +21,7 @@ router.post('/user/create',validate,createUser);
 
 /* PUT */
 
-router.put('/user/edit',editUser);
+router.put('/user/edit/:id',editUser);
 
 /* DELETE */
 

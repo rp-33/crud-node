@@ -6,8 +6,10 @@
   "scripts": {
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel -d ./build ./src -s",
-    "build": "npm run clean && npm run build-babel",
-    "start": "npm run build && node ./build/index.js"
+    "dev": "nodemon bin/dev",
+    "test:build": "babel src/index.js -o src/index.babel.js",
+    "build": "npm run clean && mkdir dist && babel src -s -d dist",
+    "start": "npm run build && node bin/production"
   },
   "author": "Ricardo Perez",
   "license": "ISC",
