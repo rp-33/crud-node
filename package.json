@@ -9,7 +9,7 @@
     "dev": "nodemon bin/dev",
     "test:build": "babel src/index.js -o src/index.babel.js",
     "build": "npm run clean && mkdir dist && babel src -s -d dist",
-    "start": "npm run build && node bin/production"
+    "start": "node bin/production"
   },
   "author": "Ricardo Perez",
   "license": "ISC",
